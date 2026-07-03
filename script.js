@@ -13,7 +13,7 @@ var errorPassword = document.getElementById("error_password");
 var errorGender = document.getElementById("error_gender");
 
 
-
+btn.disabled=true;
 function validate() {
     let isValid = true;
     const genders = document.querySelector('input[name="gender"]:checked');
