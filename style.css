@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.register {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.register:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+}
+
+.error_msg {
+    color: red;
+}
+
+.form {
+    width: 100%;
+}
+
+.form label {
+    font-size: 18px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="number"] {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form input[type="radio"] {
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.error {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.table {
+    margin: auto;
+    margin-top: 30px;
+    border-spacing: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-collapse: collapse;
+
+}
+
+.table,
+.table th,
+.table td {
+    border: 1px solid black;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar h2,
+    .links {
+        font-size: 16px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .form label {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .table th:nth-child(5),
+    .table td:nth-child(5) {
+        display: none;
+    }
+
+    .table th,
+    .table td {
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

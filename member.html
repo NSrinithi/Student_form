@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2>Student Management System</h2>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars" style="color: white;"></i>
+        </div>
+        <div class="links">
+            <a href="index.html">Register</a>
+            <a href="member.html">Student List</a>
+        </div>
+    </nav>
+    <h2 style="text-align: center;" class="title">Registered Students Detail</h2>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="result">
+        </tbody>
+    </table>
+    <script src="member.js"></script>
+</body>
+
+</html>

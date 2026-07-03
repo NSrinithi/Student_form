@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>Student Management System</h2>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars" style="color: white;"></i>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Register</a>
+            <a href="member.html">Student List</a>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <h1>Registration</h1>
+        <p>Fill in the details below to register a new student.</p>
+        <form action="" class="form">
+
+            <label for="">Name:</label><br>
+            <input type="text" id="name"><br>
+            <div id="error_name" class="error">
+            </div>
+            <label for="">Age:</label><br>
+            <input type="number" name="" id="age"><br>
+            <div id="error_age" class="error">
+            </div>
+            <label for="">Gender:</label><br>
+            <input type="radio" name="gender" value="Male">Male<input type="radio" name="gender"
+                value="Female">Female<br>
+            <div id="error_gender" class="error">
+            </div>
+            <label for="">Email:</label><br>
+            <input type="email" name="" id="email"><br>
+            <div id="error_email" class="error">
+            </div>
+            <label for="">Password:</label><br>
+            <input type="password" name="" id="password" min="6"><br>
+            <div id="error_password" class="error">
+            </div>
+
+            <button type="button" class="register">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
