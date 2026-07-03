@@ -12,7 +12,6 @@ var errorEmail = document.getElementById("error_email");
 var errorPassword = document.getElementById("error_password");
 var errorGender = document.getElementById("error_gender");
 
-
 btn.disabled=true;
 function validate() {
     let isValid = true;
@@ -67,6 +66,7 @@ password.addEventListener("input", validate);
 gender.forEach(g => {
     g.addEventListener("change", validate);
 });
+
 
 
 btn.addEventListener("click", function () {
